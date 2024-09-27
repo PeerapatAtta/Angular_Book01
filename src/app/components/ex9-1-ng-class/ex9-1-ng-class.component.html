@@ -1,0 +1,21 @@
+<!-- ng Class Directive -->
+<div class="container mt-5 pt-5">
+    <div class="row mt-3">
+        <div class="col-lg-4 col-am-6 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    <div class="float-start">ngClass Directive</div>
+                    <button class="btn btn-primary btn-sm float-end"
+                        [ngClass]="{'btn-danger':status, 'btn-primary':!status}" (click)="myMethod()">Click</button>
+                </div>
+                <div class="card-body" [ngClass]="{'bg-danger':status}">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, enim dolore in, aliquam officiis
+                        tenetur voluptate hic accusantium perspiciatis iure fuga, consequuntur vero nihil corrupti alias
+                        deserunt aut? Repellendus, blanditiis.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<!-- ngIf -->
+<div class="container pt-5 mt-5">
+	<div class="row mt-3">
+		<div class="col-lg-4 col-sm-6 m3">
+			<div class="card">
+				<img class="card-img-top" [src]="userImage" />
+				<div class="card-header">
+					<div class="float-start">{{ name }}</div>
+					<button class="btn btn-primary btn-sm float-end" *ngIf="details" (click)="onUserClick()"
+						[innerHTML]="status ? 'Show' : 'Hide'">
+						Hide
+					</button>
+				</div>
+				<div class="card-body" *ngIf="details && !status">
+					<dl class="row">
+						<dt class="col-lg-3 col-sm-4 col-3">Address:</dt>
+						<dd class="col-lg-9 col-sm-8 col-9">{{details}}</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

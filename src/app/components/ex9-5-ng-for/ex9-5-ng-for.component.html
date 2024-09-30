@@ -1,0 +1,29 @@
+<!-- ngIf -->
+<div class="container pt-5 mt-5">
+	<div class="row mt-3">
+        <h2>ngFor</h2><br>
+		<div class="col-lg-4 col-sm-6 m3" *ngFor="let currentCustomer of customers">			
+            <div class="card">
+                <img class="card-img-top" 
+                [src]="currentCustomer.image" >
+                <div class="card-header">
+                    <div class="float-start">{{currentCustomer.name}}</div>
+                    <button class="btn btn-primary btn-sm float-end" 
+                    *ngIf="currentCustomer.address"
+                    (click)="!currentCustomer.status = !currentCustomer.status"
+                    [innerHTML]="currentCustomer.status?'Show':'Hide'">
+                        Hide
+                    </button>
+                </div>
+                <div class="card-body" *ngIf="currentCustomer.address && !currentCustomer.status">
+                    <dl class="row">
+                        <dt class="col-lg-3 col-sm-4 col-3">Address: </dt>
+                        <dd class="col-lg-9 col-sm-8 col-9">{{currentCustomer.address}}</dd>
+                    </dl>
+                </div>
+
+            </div>
+
+		</div>
+	</div>
+</div>

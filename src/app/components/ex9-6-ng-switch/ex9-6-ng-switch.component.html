@@ -1,0 +1,29 @@
+<!-- ngSwitch -->
+<div class="container mt-5 pt-5">
+    <h2>ngSwitch</h2><br>
+    <div class="row mt-4">
+        <div class="col-4"></div>
+        <div class="col-4 text-center">
+            <button class="btn btn-primary btn-sm" (click)="onRandom()">Random Number</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-12 text-center" *ngIf="randomStatus">
+            <div [ngSwitch]="randomNumber">
+                <div *ngSwitchCase="1">
+                    <div class="alert-danger">Reward 1</div>
+                </div>
+                <div *ngSwitchCase="2">
+                    <div class="alert-warning">Reward 2</div>
+                </div>
+                <div *ngSwitchCase="3">
+                    <div class="alert-success">Reward 3</div>
+                </div>
+                <div *ngSwitchDefault>
+                    <div class="alert-primary">Small Reward</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

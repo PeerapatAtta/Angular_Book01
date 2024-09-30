@@ -6,6 +6,7 @@ import { Ex93NgIfComponent } from './components/ex9-3-ng-if/ex9-3-ng-if.componen
 import { Ex94NgForComponent } from './components/ex9-4-ng-for/ex9-4-ng-for.component';
 import { Ex95NgForComponent } from './components/ex9-5-ng-for/ex9-5-ng-for.component';
 import { Ex96NgSwitchComponent } from './components/ex9-6-ng-switch/ex9-6-ng-switch.component';
+import { Ex97CustomDirectiveComponent } from './components/ex9-7-custom-directive/ex9-7-custom-directive.component';
 
 export const routes: Routes = [
     {
@@ -47,6 +48,11 @@ export const routes: Routes = [
         path: 'ex9-6-ng-switch',
         title: 'ex9-6-ng-switch',
         component: Ex96NgSwitchComponent,
+    },
+    {
+        path: 'ex9-7-custom-directive',
+        title: 'ex9-7-custom-directive',
+        component: Ex97CustomDirectiveComponent,
     },
     {
         path: '**',

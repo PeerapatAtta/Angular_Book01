@@ -9,7 +9,7 @@ import { Ex96NgSwitchComponent } from './components/ex9-6-ng-switch/ex9-6-ng-swi
 import { Ex97CustomDirectiveComponent } from './components/ex9-7-custom-directive/ex9-7-custom-directive.component';
 import { Ex71StringInterpolationComponent } from './components/ex7-1-string-interpolation/ex7-1-string-interpolation.component';
 import { Ex72AttributeBindingComponent } from './components/ex7-2-attribute-binding/ex7-2-attribute-binding.component';
-import { Ex73AttributeBindingComponent } from './components/ex7-3-attribute-binding/ex7-2-attribute-binding.component';
+import { Ex73AttributeBindingComponent } from './components/ex7-3-attribute-binding/ex7-3-attribute-binding.component';
 
 export const routes: Routes = [
     {

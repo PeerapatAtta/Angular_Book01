@@ -4,8 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-ex7-3-attribute-binding',
   standalone: true,
   imports: [],
-  templateUrl: './ex7-2-attribute-binding.component.html',
-  styleUrl: './ex7-2-attribute-binding.component.css'
+  templateUrl: './ex7-3-attribute-binding.component.html',
+  styleUrl: './ex7-3-attribute-binding.component.css'
 })
 export class Ex73AttributeBindingComponent implements OnInit {
 

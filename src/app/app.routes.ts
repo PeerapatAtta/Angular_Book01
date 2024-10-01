@@ -11,6 +11,7 @@ import { Ex71StringInterpolationComponent } from './components/ex7-1-string-inte
 import { Ex72AttributeBindingComponent } from './components/ex7-2-attribute-binding/ex7-2-attribute-binding.component';
 import { Ex73AttributeBindingComponent } from './components/ex7-3-attribute-binding/ex7-3-attribute-binding.component';
 import { Ex74EvenBindingComponent } from './components/ex7-4-even-binding/ex7-4-even-binding.component';
+import { Ex75EventBindingComponent } from './components/ex7-5-event-binding/ex7-5-event-binding.component';
 
 export const routes: Routes = [
     {
@@ -77,6 +78,11 @@ export const routes: Routes = [
         path: 'ex7-4-even-binding',
         title: 'ex7-4-even-binding',
         component: Ex74EvenBindingComponent,
+    }, 
+    {
+        path: 'ex7-5-event-binding',
+        title: 'ex7-5-event-binding',
+        component: Ex75EventBindingComponent,
     },
     {
         path: '**',

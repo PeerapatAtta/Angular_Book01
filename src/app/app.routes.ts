@@ -12,6 +12,7 @@ import { Ex72AttributeBindingComponent } from './components/ex7-2-attribute-bind
 import { Ex73AttributeBindingComponent } from './components/ex7-3-attribute-binding/ex7-3-attribute-binding.component';
 import { Ex74EvenBindingComponent } from './components/ex7-4-even-binding/ex7-4-even-binding.component';
 import { Ex75EventBindingComponent } from './components/ex7-5-event-binding/ex7-5-event-binding.component';
+import { Ex76EvenBindingComponent } from './components/ex7-6-even-binding/ex7-6-even-binding.component';
 
 export const routes: Routes = [
     {
@@ -83,6 +84,11 @@ export const routes: Routes = [
         path: 'ex7-5-event-binding',
         title: 'ex7-5-event-binding',
         component: Ex75EventBindingComponent,
+    },  
+    {
+        path: 'ex7-6-even-binding',
+        title: 'ex7-6-even-binding',
+        component: Ex76EvenBindingComponent,
     },
     {
         path: '**',

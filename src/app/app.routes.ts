@@ -10,6 +10,7 @@ import { Ex97CustomDirectiveComponent } from './components/ex9-7-custom-directiv
 import { Ex71StringInterpolationComponent } from './components/ex7-1-string-interpolation/ex7-1-string-interpolation.component';
 import { Ex72AttributeBindingComponent } from './components/ex7-2-attribute-binding/ex7-2-attribute-binding.component';
 import { Ex73AttributeBindingComponent } from './components/ex7-3-attribute-binding/ex7-3-attribute-binding.component';
+import { Ex74EvenBindingComponent } from './components/ex7-4-even-binding/ex7-4-even-binding.component';
 
 export const routes: Routes = [
     {
@@ -71,6 +72,11 @@ export const routes: Routes = [
         path: 'ex7-3-attribute-binding',
         title: 'ex7-3-attribute-binding',
         component: Ex73AttributeBindingComponent,
+    },    
+    {
+        path: 'ex7-4-even-binding',
+        title: 'ex7-4-even-binding',
+        component: Ex74EvenBindingComponent,
     },
     {
         path: '**',
